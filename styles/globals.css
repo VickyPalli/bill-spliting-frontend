@@ -1,0 +1,112 @@
+.home-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100vh;
+}
+
+/* Login page */
+.loginContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  width: 350px;
+  border: 1px solid rgb(207, 204, 204);
+  padding: 20px;
+}
+
+.errorElement {
+  color: red;
+}
+
+.header-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  background-color: rgb(106, 106, 246);
+  color: white;
+  margin-bottom: 20px;
+}
+
+.header-element {
+  cursor: pointer;
+  font-size: 20px;
+  font-family: Poppins;
+}
+
+.meals-container {
+  width: 80%;
+  margin: 10px auto;
+}
+
+.meals-list {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-auto-rows: 180px;
+  gap: 20px;
+}
+
+.orders-list {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-auto-rows: 100px;
+  gap: 20px;
+}
+
+.meals-card {
+  display: flex;
+  flex-direction: column;
+  border: 1px solid rgb(207, 204, 204);
+  padding: 15px;
+  gap: 8px;
+}
+
+.meals-card-header {
+  color: var(--Light-mode-Dark-Color, #314862);
+  font-family: Poppins;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 133.875%;
+}
+
+.meals-card-description {
+  color: #314862;
+  font-family: Poppins;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 133.875%;
+}
+
+.create-order-btn {
+  text-align: right;
+}
+
+.create-order-container {
+  width: 80%;
+  margin: 20px auto;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+@media screen and (max-width: 600px) {
+  .meals-list {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .orders-list {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .meals-container {
+    width: 90%;
+  }
+
+  .loginContainer {
+    width: 90%;
+  }
+}
