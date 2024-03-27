@@ -52,7 +52,7 @@ const CreateOrder: React.FC<props> = ({
         });
       }
       const token = Cookies.get("token");
-      axios.defaults.headers.token = token;
+      if (token) axios.defaults.headers.token = token;
       await axios
         .post(process.env.NEXT_PUBLIC_API_BASE_URL + "/orders/create", {
           ...formData,

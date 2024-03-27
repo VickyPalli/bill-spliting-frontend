@@ -32,7 +32,7 @@ const Orders: React.FC = (): JSX.Element => {
               <div className="meals-card-header">{order?.orderName}</div>
               <div className="meals-card-description">
                 Each Friend Cost :
-                {parseInt(order?.bill / order?.friends).toString()}
+                {parseInt((order?.bill / order?.friends).toString())}
               </div>
             </div>
           ))}
